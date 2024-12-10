@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Manchester City F.C. - Club Overview</title>
+
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
     <style>
         body {
-            font-family: 'Courier New', Courier, monospace;
+            font-family: 'Poppins', sans-serif; /* Using Poppins font */
             margin: 0;
             padding: 0;
             background: linear-gradient(to bottom, #000000, #0000ff); /* Blue to Black gradient */
             color: #33FF00;
-            line-height: 1.5;
+            line-height: 1.6;
         }
 
         /* Navigation Bar Style */
@@ -45,13 +49,14 @@
             font-size: 1.2em;
             text-transform: uppercase;
             letter-spacing: 2px;
+            transition: color 0.3s ease-in-out;
         }
 
         nav ul li a:hover {
             color: #FF0000;
         }
 
-        /* Page Content Offset */
+        /* Page Content Style */
         .content-section {
             padding: 20px;
             margin: 120px auto;
@@ -62,7 +67,7 @@
             border: 2px solid #33FF00;
         }
 
-        /* Other Styles (same as your original code) */
+        /* Header and Section Title Styles */
         h1, h2 {
             color: #33FF00;
             margin-bottom: 20px;
@@ -71,25 +76,27 @@
         }
 
         h1 {
-            font-size: 3em;
+            font-size: 3.5em;
             padding-top: 30px;
             text-align: center;
         }
 
         h2 {
-            font-size: 2em;
+            font-size: 2.5em;
             margin-top: 40px;
         }
 
+        /* Paragraph Styles */
         p {
-            font-size: 1.2em;
-            line-height: 1.7;
+            font-size: 1.1em;
+            line-height: 1.8;
             color: #CCCCCC;
             max-width: 900px;
             margin: 20px auto;
             text-align: justify;
         }
 
+        /* Highlighted Text Style */
         .highlight {
             font-weight: bold;
             color: #FF0000;
@@ -106,6 +113,7 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
         }
 
+        /* Video Embed Style */
         .video-container {
             text-align: center;
             margin: 30px 0;
@@ -117,6 +125,7 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
         }
 
+        /* List Style */
         ul {
             list-style-type: disc;
             padding-left: 40px;
@@ -124,6 +133,7 @@
             color: #CCCCCC;
         }
 
+        /* Typing Effect Style */
         .typing-effect {
             font-family: 'Courier New', monospace;
             font-size: 1.3em;
@@ -164,16 +174,17 @@
             <li><a href="#mid-century">Mid-20th Century</a></li>
             <li><a href="#modern-era">Modern Era</a></li>
             <li><a href="#legacy">Legacy</a></li>
-            <!-- Feedback Link added below -->
             <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd02fll-nlAuT0rRfOaWSo6chXaE_cZqq745cK75XqAe7jLhg/viewform">Feedback</a></li>
         </ul>
     </nav>
 
+    <!-- Header Section with Image -->
     <header class="image-container">
         <h1 class="typing-effect">Manchester City F.C. </h1>
         <img src="https://e3.365dm.com/23/02/2048x1152/skynews-man-city-manchester-city_6048138.jpg" alt="Manchester City FC" />
     </header>
 
+    <!-- Content Sections -->
     <section id="intro" class="content-section">
         <h2>An Introduction to Manchester City</h2>
         <p>Manchester City Football Club, commonly known as Man City, is a professional football club based in Manchester, England. The club competes in the Premier League, the highest tier of English football. Established in 1880 as St. Mark's (West Gorton), it evolved into Ardwick AFC in 1887 before finally adopting the name Manchester City in 1894. The club's home stadium, the Etihad Stadium, has been their ground since 2003, following a long tenure at Maine Road from 1923.</p>
