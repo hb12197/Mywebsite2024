@@ -17,6 +17,53 @@
             line-height: 1.5;
         }
 
+        /* Navigation Bar Style */
+        nav {
+            background-color: #111111;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #33FF00;
+            text-decoration: none;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav ul li a:hover {
+            color: #FF0000;
+        }
+
+        /* Page Content Offset */
+        .content-section {
+            padding: 20px;
+            margin: 120px auto;
+            max-width: 1000px;
+            background-color: #111111;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            border: 2px solid #33FF00;
+        }
+
+        /* Other Styles (same as your original code) */
         h1, h2 {
             color: #33FF00;
             margin-bottom: 20px;
@@ -78,20 +125,6 @@
             color: #CCCCCC;
         }
 
-        .content-section {
-            padding: 20px;
-            margin: 40px auto;
-            max-width: 1000px;
-            background-color: #111111;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-            border: 2px solid #33FF00;
-        }
-
-        .content-section:nth-child(even) {
-            background-color: #222222;
-        }
-
         .typing-effect {
             font-family: 'Courier New', monospace;
             font-size: 1.3em;
@@ -123,23 +156,30 @@
 
 <body>
 
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#scorers">Top Scorers</a></li>
+            <li><a href="#early-history">Early History</a></li>
+            <li><a href="#mid-century">Mid-20th Century</a></li>
+            <li><a href="#modern-era">Modern Era</a></li>
+            <li><a href="#legacy">Legacy</a></li>
+        </ul>
+    </nav>
+
     <header class="image-container">
         <h1 class="typing-effect">Manchester City F.C. </h1>
         <img src="https://e3.365dm.com/23/02/2048x1152/skynews-man-city-manchester-city_6048138.jpg" alt="Manchester City FC" />
     </header>
 
-    <section class="content-section">
+    <section id="intro" class="content-section">
         <h2>An Introduction to Manchester City</h2>
         <p>Manchester City Football Club, commonly known as Man City, is a professional football club based in Manchester, England. The club competes in the Premier League, the highest tier of English football. Established in 1880 as St. Mark's (West Gorton), it evolved into Ardwick AFC in 1887 before finally adopting the name Manchester City in 1894. The club's home stadium, the Etihad Stadium, has been their ground since 2003, following a long tenure at Maine Road from 1923.</p>
-
         <p>Over the years, the club has amassed a remarkable collection of titles, including <span class="highlight">ten league titles</span>, <span class="highlight">seven FA Cups</span>, and the prestigious <span class="highlight">UEFA Champions League</span>.</p>
     </section>
 
-    <section class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/U3yJ723_Wt0?si=ytrbHH1DWutOwVFa" title="Manchester City Training Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
-
-    <section class="content-section">
+    <section id="scorers" class="content-section">
         <h2>The Club’s All-Time Top Scorers</h2>
         <ul>
             <li>Sergio Agüero - 260 goals</li>
@@ -149,16 +189,12 @@
         </ul>
     </section>
 
-    <section class="content-section">
+    <section id="early-history" class="content-section">
         <h2>Early History (1880–1920s)</h2>
         <p>Founded in 1880, St. Mark's Gorton struggled initially but began to gain momentum in the early 20th century. In 1904, the club secured its first major trophy: the Football League Division 1 title, followed by its first FA Cup win in the same year. In 1894, the club was officially renamed Manchester City, marking the beginning of its rise in English football.</p>
     </section>
 
-    <section class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/hHwXytquqjI?si=WFUmxeCcWXK-kLi0" title="Manchester City Early Years Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
-
-    <section class="content-section">
+    <section id="mid-century" class="content-section">
         <h2>Mid-20th Century Success (1930s–1960s)</h2>
         <p>After a difficult period during the interwar years, Manchester City experienced a resurgence post-World War II. Under manager Joe Mercer, the club achieved notable successes, including:</p>
         <ul>
@@ -170,26 +206,16 @@
         </ul>
     </section>
 
-    <section class="content-section">
-        <h2>2000s Rebuilding and New Ownership</h2>
-        <p>The early 2000s saw Manchester City return to the Premier League, after being promoted in 2000. Although the club underwent several managerial changes, it began a steady rebuilding process that would lay the foundation for future success. The introduction of new ownership brought about significant changes, leading to a transformation of the club's fortunes.</p>
-    </section>
-
-    <section class="content-section">
+    <section id="modern-era" class="content-section">
         <h2>The Modern Era (2008–Present)</h2>
         <p>Under the guidance of manager Roberto Mancini in 2009 and subsequent investments in world-class players, Manchester City emerged as a major force in English football. Their historic Premier League title in 2012, secured after a 44-year drought, marked the beginning of a new golden era for the club.</p>
     </section>
 
-    <section class="content-section">
+    <section id="legacy" class="content-section">
         <h2>Legacy and Global Influence</h2>
         <p>Manchester City's legacy extends beyond their on-field achievements. The club has set new benchmarks for excellence in football through strategic investment, world-class facilities, and Pep Guardiola's tactical philosophy. The Etihad Stadium remains the heart of their operations, and the club's global fanbase continues to grow, solidifying Manchester City's status as a global powerhouse in modern football.</p>
-    </section>
-
-    <section class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/2111KhbNoeg?si=I4zq7eDaXnIQqKV5" title="Manchester City Legacy Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
 </body>
 
 </html>
-
