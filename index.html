@@ -1,109 +1,193 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <style>
-     body{
-         text-align: center;
-         background-image: linear-gradient(rgb(13, 175, 177), rgb(222, 222, 222));
-         min-width: 100%;
-         min-height: 100%;
-      }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manchester City F.C. - Club Overview</title>
+
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #33FF00;
+            line-height: 1.5;
+        }
+
+        h1, h2 {
+            color: #33FF00;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        h1 {
+            font-size: 3em;
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-top: 40px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.7;
+            color: #CCCCCC;
+            max-width: 900px;
+            margin: 20px auto;
+            text-align: justify;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #FF0000;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        img {
+            max-width: 80%;
+            border: 3px solid #33FF00;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .video-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        iframe {
+            max-width: 80%;
+            border: 3px solid #33FF00;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 40px;
+            margin-bottom: 20px;
+            color: #CCCCCC;
+        }
+
+        .content-section {
+            padding: 20px;
+            margin: 40px auto;
+            max-width: 1000px;
+            background-color: #111111;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            border: 2px solid #33FF00;
+        }
+
+        .content-section:nth-child(even) {
+            background-color: #222222;
+        }
+
+        .typing-effect {
+            font-family: 'Courier New', monospace;
+            font-size: 1.3em;
+            color: #33FF00;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 0.15em solid #33FF00;
+            width: 0;
+            animation: typing 5s steps(30) 1s forwards, blinkCaret 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        @keyframes blinkCaret {
+            50% {
+                border-color: transparent;
+            }
+        }
+    </style>
 </head>
 
-
-
 <body>
-<h1>Man City</h1>
 
-<img src="https://e3.365dm.com/23/02/2048x1152/skynews-man-city-manchester-city_6048138.jpg" width ="400
-">
+    <header class="image-container">
+        <h1 class="typing-effect">Manchester City F.C. </h1>
+        <img src="https://e3.365dm.com/23/02/2048x1152/skynews-man-city-manchester-city_6048138.jpg" alt="Manchester City FC" />
+    </header>
 
-<h2>
-This is an intro about Citeh (Man City) 
-</h2>
+    <section class="content-section">
+        <h2>An Introduction to Manchester City</h2>
+        <p>Manchester City Football Club, commonly known as Man City, is a professional football club based in Manchester, England. The club competes in the Premier League, the highest tier of English football. Established in 1880 as St. Mark's (West Gorton), it evolved into Ardwick AFC in 1887 before finally adopting the name Manchester City in 1894. The club's home stadium, the Etihad Stadium, has been their ground since 2003, following a long tenure at Maine Road from 1923.</p>
 
+        <p>Over the years, the club has amassed a remarkable collection of titles, including <span class="highlight">ten league titles</span>, <span class="highlight">seven FA Cups</span>, and the prestigious <span class="highlight">UEFA Champions League</span>.</p>
+    </section>
 
+    <section class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/U3yJ723_Wt0?si=ytrbHH1DWutOwVFa" title="Manchester City Training Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
 
-<p>
-Manchester City Football Club (or simply Man City F.C.) is a professional football club based in Manchester, England, that competes in the Premier League, the top flight of English football. Founded in 1880 as St. Mark's (West Gorton), they became Ardwick Association Football Club in 1887 and Manchester City in 1894. The club's home ground is the City of Manchester Stadium in east Manchester, to which they moved in 2003, having played at Maine Road since 1923. Manchester City adopted their sky blue home shirts in 1894, the first season with the current name.[4] Over the course of its history, the club has won ten league titles, seven FA Cups, eight League Cups, seven FA Community Shields, one UEFA Champions League, one European Cup Winners' Cup, one UEFA Super Cup and one FIFA Club World Cup. Here is also a video about their in credible trainings
-</p>
+    <section class="content-section">
+        <h2>The Club’s All-Time Top Scorers</h2>
+        <ul>
+            <li>Sergio Agüero - 260 goals</li>
+            <li>Joe Hayes - 141 goals</li>
+            <li>Raheem Sterling - 131 goals</li>
+            <li>Francis Lee - 129 goals</li>
+        </ul>
+    </section>
 
+    <section class="content-section">
+        <h2>Early History (1880–1920s)</h2>
+        <p>Founded in 1880, St. Mark's Gorton struggled initially but began to gain momentum in the early 20th century. In 1904, the club secured its first major trophy: the Football League Division 1 title, followed by its first FA Cup win in the same year. In 1894, the club was officially renamed Manchester City, marking the beginning of its rise in English football.</p>
+    </section>
 
+    <section class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hHwXytquqjI?si=WFUmxeCcWXK-kLi0" title="Manchester City Early Years Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
 
-<iframe width="500" height="250" src="https://www.youtube.com/embed/U3yJ723_Wt0?si=ytrbHH1DWutOwVFa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <section class="content-section">
+        <h2>Mid-20th Century Success (1930s–1960s)</h2>
+        <p>After a difficult period during the interwar years, Manchester City experienced a resurgence post-World War II. Under manager Joe Mercer, the club achieved notable successes, including:</p>
+        <ul>
+            <li>1968 - First Division Title (League Championship)</li>
+            <li>1969 - FA Cup</li>
+            <li>1970 - League Cup</li>
+            <li>1970 - Cup Winners' Cup (first European trophy)</li>
+            <li>1970 - Charity Shield</li>
+        </ul>
+    </section>
 
-<h2> THEIR BEST GOALS SCORER
-</h2>
+    <section class="content-section">
+        <h2>2000s Rebuilding and New Ownership</h2>
+        <p>The early 2000s saw Manchester City return to the Premier League, after being promoted in 2000. Although the club underwent several managerial changes, it began a steady rebuilding process that would lay the foundation for future success. The introduction of new ownership brought about significant changes, leading to a transformation of the club's fortunes.</p>
+    </section>
 
-<p>	
-1	 Sergio Agüero	260 goals<br>
-2	Joe Hayes	141 goals<br>
-3	  Raheem Sterling	131 goals<br>
-4	Francis Lee	129 goals<br>
+    <section class="content-section">
+        <h2>The Modern Era (2008–Present)</h2>
+        <p>Under the guidance of manager Roberto Mancini in 2009 and subsequent investments in world-class players, Manchester City emerged as a major force in English football. Their historic Premier League title in 2012, secured after a 44-year drought, marked the beginning of a new golden era for the club.</p>
+    </section>
 
-</p>
+    <section class="content-section">
+        <h2>Legacy and Global Influence</h2>
+        <p>Manchester City's legacy extends beyond their on-field achievements. The club has set new benchmarks for excellence in football through strategic investment, world-class facilities, and Pep Guardiola's tactical philosophy. The Etihad Stadium remains the heart of their operations, and the club's global fanbase continues to grow, solidifying Manchester City's status as a global powerhouse in modern football.</p>
+    </section>
 
-<h2>
-
-Early History (1880–1920s)
-</h2>
-
-<p>
-Founded as St. Mark's: The club was originally founded in 1880 as St. Mark's in the district of Gorton, Manchester, by a group of churchmen. In 1892, it became Ardwick AFC before changing to Manchester City  1894.<br>
-First Successes: After a few years of struggle, Manchester City found success in the early 1900s. They won the Football League Division 1 title in 1904 and their first FA Cup in 1904. This period marked the beginning of the club’s rise in English football.<br>
-Decline and Rebuilding: The club's fortunes fluctuated throughout the early decades, with brief periods of success followed by financial struggles. They were relegated to the Second Division in 1938 but returned to the top flight shortly afterward.<br>
-</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hHwXytquqjI?si=WFUmxeCcWXK-kLi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<h2>
-Mid-20th Century (1930s–1960s)
-</h2>
-
-<p>
-Post-War Success: After World War II, City began to rebuild, and in 1956, they won the FA Cup, beating Birmingham City 3-1 in the final.<br>
-1960s Golden Age: Manchester City enjoyed its most successful era of the 1960s under manager Joe Mercer. They won:<br>
-
-<ul> 
-<li>1968 First Division Title (League Championship)
-<li>1969 FA Cup
-<li>1970 League Cup
-<li>1970 Cup Winners' Cup (first European trophy)
-<li>1970 Charity Shield
-</ul>
-</p>
-
-<h2>
-Early 2000s: Rebuilding and New Ownership
-</h2>
-
-<p>
-Return to the Premier League: Manchester City bounced back quickly, winning promotion back to the Premier League in 2000 and steadily rebuilding. During this time, the club had several managers, with Kevin Keegan providing some success, guiding the team to a high mid-table finish and briefly competing for European spots in the early 2000s.
-</p>
-<p>
-Return to the Premier League: Manchester City bounced back quickly, winning promotion back to the Premier League in 2000 and steadily rebuilding. During this time, the club had several managers, with Kevin Keegan providing some success, guiding the team to a high mid-table finish and briefly competing for European spots in the early 2000s.
-</p>
-<h2>
-The Modern Era (2008–Present)
-</h2>
-
-<p>
-2009–2010: The arrival of high-profile players such as Robinho and the hiring of manager Mark Hughes signaled the club's ambitions. However, it wasn't until the appointment of Roberto Mancini in 2009 that the club began to taste real success.
-</p>
-
-<h2>
-Legacy and Influence
-</h2>
-
-<p>
-Manchester City’s rise to prominence has reshaped English football, both on the pitch and off it. The club’s success has been driven by investment in world-class players and infrastructure, and their influence extends beyond the football field. The club’s football philosophy under Pep Guardiola, based on intricate passing and possession, has been widely praised and has set a new standard in modern football.
-</p>
-
-<p>
-The Etihad Stadium remains the club’s home, and the club’s global presence continues to grow, with a vast fanbase worldwide. Through a combination of rich history, strong ownership, and successful management, Manchester City has solidified itself as one of the world’s premier football clubs.
-</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2111KhbNoeg?si=I4zq7eDaXnIQqKV5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <section class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2111KhbNoeg?si=I4zq7eDaXnIQqKV5" title="Manchester City Legacy Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
 
 </body>
 
